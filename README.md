@@ -15,4 +15,4 @@ docker build --platform=linux/amd64 -t portadev/pimcore-web Pimweb/php:8-4
 docker tag portadev/pimcore-web portadev/pimcore-web:8.4
 docker push portadev/pimcore-web:8.4
 ```
-3. The image should be built and pushed to the target repository
+3. The image should be built and pushed to the target repository: https://hub.docker.com/r/portadev/pimcore-web
