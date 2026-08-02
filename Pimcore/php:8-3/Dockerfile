@@ -6,6 +6,7 @@ ENV SERVICE_NGINX_CLIENT_MAX_BODY_SIZE=128M \
     COMPOSER_ALLOW_SUPERUSER=true
 
 COPY .docker/nginx/nginx-prod.conf /opt/docker/etc/nginx/vhost.conf
+COPY .docker/nginx/vhost.common.d/10-location-root.conf /opt/docker/etc/nginx/vhost.common.d/10-location-root.conf
 COPY .docker/imagemagick/policy.xml /etc/ImageMagick-6/policy.xml
 
 RUN apt-get update && apt-get install -y \
