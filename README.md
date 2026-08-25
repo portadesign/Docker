@@ -20,6 +20,11 @@ docker build --platform=linux/amd64 -t portadev/pimcore Pimcore/php:8-3
 docker tag portadev/pimcore portadev/pimcore:8.3
 docker push portadev/pimcore:8.3
 ```
+```bash
+docker build --platform=linux/amd64 -t portadev/pimcore "Pimcore/php:8-5-rr"
+docker tag portadev/pimcore portadev/pimcore:8.5-rr
+docker push portadev/pimcore:8.5-rr
+```
 3. The images should be built and pushed to the target repositories:
    - https://hub.docker.com/r/portadev/pimcore-web
    - https://hub.docker.com/r/portadev/pimcore
